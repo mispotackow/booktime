@@ -1,0 +1,10 @@
+.pyc
+.DS_Store
+__pycache__/
+db.sqlite3
+*.key
+thumbs.db
+.idea
+migrations/
+Thumbs.db
+profile_images/
