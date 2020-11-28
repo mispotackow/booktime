@@ -1,0 +1,32 @@
+{
+  "name": "booktime",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "jest": "^26.6.3",
+    "webpack": "^4.44.2",
+    "webpack-bundle-tracker": "^0.3.0",
+    "webpack-cli": "^3.0.8"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "frontend"
+    ],
+    "testURL": "http://localhost"
+  },
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.4.1"
+  }
+}

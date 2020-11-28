@@ -1,0 +1,226 @@
+1606501825905	geckodriver	INFO	Listening on 127.0.0.1:60391
+1606501825916	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevcCxaN"
+
+(/usr/lib/firefox/firefox:75689): dconf-WARNING **: 18:30:42.969: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:75689): WARNING **: 18:30:42.969: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:75785): dconf-WARNING **: 18:30:45.389: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:75785): WARNING **: 18:30:45.391: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606501848491	Marionette	INFO	Listening on port 35653
+1606501848852	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606501860431	Marionette	INFO	Stopped listening on port 35653
+1606501991801	geckodriver	INFO	Listening on 127.0.0.1:52425
+1606501992819	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6GKw3b"
+
+(/usr/lib/firefox/firefox:76207): dconf-WARNING **: 18:33:18.351: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:76207): WARNING **: 18:33:18.352: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:76231): dconf-WARNING **: 18:33:18.768: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:76231): WARNING **: 18:33:18.769: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+1606501999047	Marionette	INFO	Listening on port 45673
+1606501999227	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606502018742	Marionette	INFO	Stopped listening on port 45673
+1606502222080	geckodriver	INFO	Listening on 127.0.0.1:51953
+1606502222086	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZnhtXL"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:76753): dconf-WARNING **: 18:37:07.813: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:76753): WARNING **: 18:37:07.814: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:76778): dconf-WARNING **: 18:37:08.207: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:76778): WARNING **: 18:37:08.208: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+1606502228386	Marionette	INFO	Listening on port 44293
+1606502228470	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606502239587	Marionette	INFO	Stopped listening on port 44293
+1606502374561	geckodriver	INFO	Listening on 127.0.0.1:57339
+1606502374569	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileF7spQ1"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:77171): dconf-WARNING **: 18:39:39.540: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:77171): WARNING **: 18:39:39.542: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:77191): dconf-WARNING **: 18:39:39.820: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:77191): WARNING **: 18:39:39.821: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+1606502380255	Marionette	INFO	Listening on port 34435
+1606502380329	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606502396751	Marionette	INFO	Stopped listening on port 34435
+1606502510725	geckodriver	INFO	Listening on 127.0.0.1:42489
+1606502510731	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCSSEiQ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:77581): dconf-WARNING **: 18:41:55.622: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:77581): WARNING **: 18:41:55.623: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:77606): dconf-WARNING **: 18:41:55.956: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:77606): WARNING **: 18:41:55.957: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+1606502516012	Marionette	INFO	Listening on port 45289
+1606502516150	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606502532918	Marionette	INFO	Stopped listening on port 45289
+1606502556059	geckodriver	INFO	Listening on 127.0.0.1:36851
+1606502556076	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNZUjpI"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:77920): dconf-WARNING **: 18:42:41.046: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:77920): WARNING **: 18:42:41.048: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:77940): dconf-WARNING **: 18:42:41.268: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:77940): WARNING **: 18:42:41.268: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+1606502561742	Marionette	INFO	Listening on port 46163
+1606502561840	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1606502604302	geckodriver	INFO	Listening on 127.0.0.1:52719
+1606502604311	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileC4WKDz"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:78244): dconf-WARNING **: 18:43:29.367: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:78244): WARNING **: 18:43:29.370: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:78266): dconf-WARNING **: 18:43:29.693: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:78266): WARNING **: 18:43:29.693: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+1606502609824	Marionette	INFO	Listening on port 34473
+1606502610023	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606502620024	Marionette	INFO	Stopped listening on port 34473
+1606576559687	geckodriver	INFO	Listening on 127.0.0.1:47975
+1606576560562	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCSMpXr"
+
+(/usr/lib/firefox/firefox:35694): dconf-WARNING **: 15:16:18.324: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:35694): WARNING **: 15:16:18.325: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:35794): dconf-WARNING **: 15:16:21.060: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:35794): WARNING **: 15:16:21.061: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606576584043	Marionette	INFO	Listening on port 39233
+1606576584453	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606576606140	Marionette	INFO	Stopped listening on port 39233
+1606576639502	geckodriver	INFO	Listening on 127.0.0.1:34565
+1606576639517	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKnvY9v"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:36107): dconf-WARNING **: 15:17:24.354: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:36107): WARNING **: 15:17:24.355: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:36127): dconf-WARNING **: 15:17:24.562: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:36127): WARNING **: 15:17:24.566: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+1606576644618	Marionette	INFO	Listening on port 46017
+1606576644734	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606576661431	Marionette	INFO	Stopped listening on port 46017
+1606576734995	geckodriver	INFO	Listening on 127.0.0.1:39543
+1606576735000	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3P2YqS"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:36525): dconf-WARNING **: 15:18:59.866: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:36525): WARNING **: 15:18:59.867: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:36542): dconf-WARNING **: 15:19:00.054: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:36542): WARNING **: 15:19:00.055: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+1606576740289	Marionette	INFO	Listening on port 36103
+1606576740427	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606576756252	Marionette	INFO	Stopped listening on port 36103
+1606577504851	geckodriver	INFO	Listening on 127.0.0.1:48469
+1606577504858	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile57Fyz8"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:38173): dconf-WARNING **: 15:31:49.697: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:38173): WARNING **: 15:31:49.699: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:38193): dconf-WARNING **: 15:31:49.884: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:38193): WARNING **: 15:31:49.886: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+1606577510209	Marionette	INFO	Listening on port 40627
+1606577510328	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606577526909	Marionette	INFO	Stopped listening on port 40627
+1606577954205	geckodriver	INFO	Listening on 127.0.0.1:56475
+1606577954211	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile93cNLO"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:39257): dconf-WARNING **: 15:39:19.094: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:39257): WARNING **: 15:39:19.094: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:39277): dconf-WARNING **: 15:39:19.327: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:39277): WARNING **: 15:39:19.329: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+1606577959499	Marionette	INFO	Listening on port 44021
+1606577959602	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606577976368	Marionette	INFO	Stopped listening on port 44021
+1606578058149	geckodriver	INFO	Listening on 127.0.0.1:60949
+1606578058155	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewFB25W"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:39657): dconf-WARNING **: 15:41:03.480: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:39657): WARNING **: 15:41:03.482: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:39675): dconf-WARNING **: 15:41:03.724: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:39675): WARNING **: 15:41:03.725: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+1606578064004	Marionette	INFO	Listening on port 41473
+1606578064157	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606578080046	Marionette	INFO	Stopped listening on port 41473
+1606579849473	geckodriver	INFO	Listening on 127.0.0.1:45497
+1606579850301	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileh7232s"
+
+(/usr/lib/firefox/firefox:43158): dconf-WARNING **: 16:11:10.525: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:43158): WARNING **: 16:11:10.526: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:43256): dconf-WARNING **: 16:11:13.342: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:43256): WARNING **: 16:11:13.343: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606579877393	Marionette	INFO	Listening on port 43583
+1606579878234	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606579901254	Marionette	INFO	Stopped listening on port 43583
+1606579951097	geckodriver	INFO	Listening on 127.0.0.1:50385
+1606579951107	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHavSDA"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:43618): dconf-WARNING **: 16:12:36.778: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:43618): WARNING **: 16:12:36.779: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:43643): dconf-WARNING **: 16:12:37.160: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:43643): WARNING **: 16:12:37.161: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+1606579957189	Marionette	INFO	Listening on port 46373
+1606579957325	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606579968636	Marionette	INFO	Stopped listening on port 46373
+1606582796960	geckodriver	INFO	Listening on 127.0.0.1:57031
+1606582797855	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLNPpAf"
+
+(/usr/lib/firefox/firefox:49101): dconf-WARNING **: 17:00:15.945: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:49101): WARNING **: 17:00:15.946: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+
+(/usr/lib/firefox/firefox:49197): dconf-WARNING **: 17:00:18.348: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+
+** (/usr/lib/firefox/firefox:49197): WARNING **: 17:00:18.349: Unable to connect to dbus: Не удалось подключиться к: Отказано в доступе
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606582821471	Marionette	INFO	Listening on port 35163
+1606582821824	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606582841894	Marionette	INFO	Stopped listening on port 35163
