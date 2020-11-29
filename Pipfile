@@ -9,6 +9,18 @@ psycopg2-binary = "*"
 pillow = "*"
 selenium = "*"
 django-webpack-loader = "*"
+django-extensions = "*"
+pydotplus = "*"
+ipython = "*"
+werkzeug = "*"
+urllib3 = "*"
+chardet = "*"
+factory-boy = "*"
+django-debug-toolbar = "*"
+django-tables2 = "*"
+django-filter = "*"
+django-widget-tweaks = "*"
+djangorestframework = "*"
 
 [dev-packages]
 

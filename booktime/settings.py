@@ -38,11 +38,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webpack_loader',
+    'django_extensions',
+    'debug_toolbar',
+    'django_tables2',
+    'widget_tweaks',
+    'rest_framework',
     'main.apps.MainConfig',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -158,6 +164,24 @@ LOGGING = {
     },
 }
 
+REST_FRAMEWORK = {
+    # Классы аутентификации используются для проверки соответствия
+    # комбинаций пользователя и пароля тому, что хранится в базе данных.
+    'DEFAULT_AUTHENTICATION_CLASSES':
+        ('rest_framework.authentication.SessionAuthentication',
+         'rest_framework.authentication.BasicAuthentication'),
+    # Классы разрешений используются для понимания того, что пользователь может или не может делать в системе.
+    'DEFAULT_PERMISSION_CLASSES':
+        ('rest_framework.permissions.DjangoModelPermissions',),
+    # В дополнение к этому мы устанавливаем django-filter в качестве нашего бэкэнда фильтрации и
+    'DEFAULT_FILTER_BACKENDS':
+        ('django_filters.rest_framework.DjangoFilterBackend',),
+    # устанавливаем разбивку на страницы.
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    # по умолчанию из 100 элементов на странице.
+    'PAGE_SIZE': 100
+}
+
 if not DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_HOST_USER = "username"
@@ -176,3 +200,7 @@ WEBPACK_LOADER = {
         'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
     }
 }
+
+INTERNAL_IPS = ["127.0.0.1"]
+
+DJANGO_TABLES2_TEMPLATE = 'django_tables2/bootstrap.html'

@@ -3,9 +3,9 @@ import logging
 from PIL import Image
 from django.core.files.base import ContentFile
 from django.contrib.auth.signals import user_logged_in
-from django.db.models.signals import pre_save
+from django.db.models.signals import pre_save, post_save
 from django.dispatch import receiver
-from .models import ProductImage, Basket
+from .models import ProductImage, Basket, OrderLine, Order
 
 THUMBNAIL_SIZE = (300, 300)
 
@@ -54,3 +54,21 @@ def merge_baskets_if_found(sender, user, request, **kwargs):
             anonymous_basket.uset = user
             anonymous_basket.save()
             logger.info('Assigned user to basket id %d', anonymous_basket.id,)
+
+
+# Отмеченные заказы больше не отображаются в api списка.
+# чтобы не зависеть от того, как они помечены, через REST API или через администратора Django.
+@receiver(post_save, sender=OrderLine)
+def orderline_to_order_status(sender, instance, **kwargs):
+    """
+    Этот сигнал будет выполнен после сохранения экземпляров модели OrderLine.
+    Первое, что он делает, это проверяет, имеют ли какие-либо строки заказа,
+    связанные с заказом, статусы ниже «sent». Если есть, выполнение прекращается.
+    Если под статусом «sent» нет строчки, весь заказ помечается как «done».
+    """
+    if not instance.order.lines.filter(status__lt=OrderLine.SENT).exists():
+        logger.info("All lines for order %d have been processed."
+                    "Marking as done.", instance.order.id,)
+        instance.order.status = Order.DONE
+        instance.order.save()
+

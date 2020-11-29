@@ -1,16 +1,19 @@
-from django.shortcuts import render
-from django.views.generic.list import ListView
-from django.shortcuts import get_object_or_404, render
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth import login, authenticate
-from django.views.generic.edit import FormView, CreateView, UpdateView, DeleteView
-from django.views.generic.edit import (FormView, CreateView, UpdateView, DeleteView)
+from django import forms as django_forms
+from django.db import models as django_models
 from django.contrib import messages
+from django.contrib.auth import login, authenticate
+from django.contrib.auth.mixins import (LoginRequiredMixin, UserPassesTestMixin)
 from django.http import HttpResponseRedirect
+from django.views.generic.list import ListView
+from django.views.generic.edit import (FormView, CreateView, UpdateView, DeleteView)
+from django.shortcuts import get_object_or_404, render
 from django.urls import reverse_lazy
 from django.urls import reverse
+from django_filters.views import FilterView
 from main import models
 from main import forms
+import django_filters
+
 import logging
 
 logger = logging.getLogger(__name__)
@@ -157,3 +160,29 @@ class AddressSelectionView(LoginRequiredMixin, FormView):
                             form.cleaned_data['shipping_address'])
 
         return super().form_valid(form)
+
+
+class DateInput(django_forms.DateInput):
+    input_type = 'date'
+
+
+class OrderFilter(django_filters.FilterSet):
+    class Meta:
+        model = models.Order
+        # фильтры для поиска
+        fields = {'user__email': ['icontains'],
+                  'status': ['exact'],
+                  'date_updated': ['gt', 'lt'],
+                  'date_added': ['gt', 'lt'],}
+
+        filter_overrides = {django_models.DateTimeField: {'filter_class': django_filters.DateFilter,
+                                                          'extra': lambda f: {'widget': DateInput}}}
+
+
+# доступно толлько для пользователем со статусом staff
+class OrderView(UserPassesTestMixin, FilterView):
+    filterset_class = OrderFilter
+    login_url = reverse_lazy('login')
+
+    def test_func(self):
+        return self.request.user.is_staff is True
