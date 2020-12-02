@@ -21,6 +21,8 @@ django-tables2 = "*"
 django-filter = "*"
 django-widget-tweaks = "*"
 djangorestframework = "*"
+requests = "*"
+weasyprint = "*"
 
 [dev-packages]
 
