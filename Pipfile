@@ -23,6 +23,10 @@ django-widget-tweaks = "*"
 djangorestframework = "*"
 requests = "*"
 weasyprint = "*"
+channels = "*"
+channels-redis = "*"
+aioredis = "*"
+aiohttp = "*"
 
 [dev-packages]
 

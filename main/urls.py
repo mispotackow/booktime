@@ -3,6 +3,7 @@ from django.views.generic import TemplateView
 from django.views.generic.detail import DetailView
 from django.contrib.auth import views as auth_views
 from rest_framework import routers
+from rest_framework.authtoken import views as authtoken_views
 from main import forms
 from main import models
 from main import views
@@ -35,4 +36,8 @@ urlpatterns = [
     path('admin/', admin.main_admin.urls),
     path('office-admin/', admin.central_office_admin.urls),
     path('dispatch-admin/', admin.dispatchers_admin.urls),
+    path('customer-service/<int:order_id>/', views.room, name='cs_chat',),
+    path('customer-service/', TemplateView.as_view(template_name='customer_service.html'), name='cs_main',),
+    path('mobile-api/auth/', authtoken_views.obtain_auth_token, name='mobile_token',),
+    path('mobile-api/my-orders/', endpoints.my_orders, name='mobile_my_orders',),
 ]

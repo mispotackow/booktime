@@ -25,12 +25,13 @@ SECRET_KEY = '=(=mmfihik2nd3x%$offwwpw^qmipsn=*r18f3h^khc(k*ba9k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'channels',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,10 +42,22 @@ INSTALLED_APPS = [
     'django_extensions',
     'debug_toolbar',
     'django_tables2',
-    'widget_tweaks',
     'rest_framework',
+    'rest_framework.authtoken',
+    'widget_tweaks',
     'main.apps.MainConfig',
 ]
+
+ASGI_APPLICATION = "booktime.routing.application"
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -167,19 +180,23 @@ LOGGING = {
 REST_FRAMEWORK = {
     # Классы аутентификации используются для проверки соответствия
     # комбинаций пользователя и пароля тому, что хранится в базе данных.
-    'DEFAULT_AUTHENTICATION_CLASSES':
-        ('rest_framework.authentication.SessionAuthentication',
-         'rest_framework.authentication.BasicAuthentication'),
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.TokenAuthentication",
+        "rest_framework.authentication.BasicAuthentication",
+    ),
     # Классы разрешений используются для понимания того, что пользователь может или не может делать в системе.
-    'DEFAULT_PERMISSION_CLASSES':
-        ('rest_framework.permissions.DjangoModelPermissions',),
+    "DEFAULT_PERMISSION_CLASSES": (
+        "rest_framework.permissions.DjangoModelPermissions",
+    ),
     # В дополнение к этому мы устанавливаем django-filter в качестве нашего бэкэнда фильтрации и
-    'DEFAULT_FILTER_BACKENDS':
-        ('django_filters.rest_framework.DjangoFilterBackend',),
+    "DEFAULT_FILTER_BACKENDS": (
+        "django_filters.rest_framework.DjangoFilterBackend",
+    ),
     # устанавливаем разбивку на страницы.
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     # по умолчанию из 100 элементов на странице.
-    'PAGE_SIZE': 100
+    "PAGE_SIZE": 100,
 }
 
 if not DEBUG:
