@@ -2,9 +2,16 @@
 .DS_Store
 __pycache__/
 db.sqlite3
+media/
+staticfiles/
 *.key
 thumbs.db
 .idea
 migrations/
 Thumbs.db
 profile_images/
+bundles/
+node_modules/
+webpack-stats.json
+geckodriver.log
+.env

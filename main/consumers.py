@@ -3,6 +3,7 @@ import aioredis
 import asyncio
 import logging
 import json
+from django.conf import settings
 from django.urls import reverse
 from django.shortcuts import get_object_or_404
 from channels.db import database_sync_to_async
@@ -72,7 +73,7 @@ class ChatConsumer(AsyncJsonWebsocketConsumer):
             await self.close()
 
         if authorized:
-            self.r_conn = await aioredis.create_redis('redis://localhost')
+            self.r_conn = await aioredis.create_redis(settings.REDIS_URL)
             await self.channel_layer.group_add(self.room_group_name, self.channel_name)
             await self.accept()
             # В методе connect() мы используем метод group_send()
@@ -174,7 +175,7 @@ class ChatNotifyConsumer(AsyncHttpConsumer):
         которых не истек, и отправлять их обратно клиенту. Если во время соединения передан флаг nopoll,
         он выйдет из цикла, не дожидаясь отключения клиента.
         """
-        r_conn = await aioredis.create_redis('redis://localhost')
+        r_conn = await aioredis.create_redis(settings.REDIS_URL)
         while self.is_streaming:
             active_chats = await r_conn.keys('customer-service_*')
             presences = {}

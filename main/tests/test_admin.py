@@ -5,6 +5,15 @@ from django.urls import reverse
 from unittest.mock import patch
 from main import factories
 from main import models
+import re
+
+
+def compare_bodies(content, expected_content):
+    c_match = re.search(r'<body>(.*)</body>', content, re.DOTALL|re.M)
+    e_match = re.search(r'<body>(.*)</body>', expected_content, re.DOTALL|re.M)
+    if c_match and e_match:
+        return c_match.group(1) == e_match.group(1)
+    return False
 
 
 class TestAdminViews(TestCase):
@@ -51,10 +60,10 @@ class TestAdminViews(TestCase):
             content = response.content.decode('utf8')
             with open('main/fixtures/invoice_test_order.html', 'r') as fixture:
                 expected_content = fixture.read()
-            self.assertEqual(content, expected_content)
+            self.assertEqual(compare_bodies(content, expected_content))
             response = self.client.get(reverse('admin:invoice', kwargs={'order_id': order.id}), {'format': 'pdf'})
             self.assertEqual(response.status_code, 200)
             content = response.content
             with open('main/fixtures/invoice_test_order.pdf', 'rb') as fixture:
                 expected_content = fixture.read()
-            self.assertEqual(content, expected_content)
+            self.assertEqual(content[:5], expected_content[:5])

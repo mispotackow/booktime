@@ -2,10 +2,12 @@ from decimal import Decimal
 from django.urls import reverse
 from django.core.files.images import ImageFile
 from django.contrib.staticfiles.testing import (StaticLiveServerTestCase)
+from django.test import tag
 from selenium.webdriver.firefox.webdriver import WebDriver
 from main import models
 
 
+@tag('e2e')
 class FrontendTest(StaticLiveServerTestCase):
     # запустит Firefox
     @classmethod

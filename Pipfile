@@ -27,6 +27,10 @@ channels = "*"
 channels-redis = "*"
 aioredis = "*"
 aiohttp = "*"
+whitenoise = "*"
+django-environ = "*"
+boto3 = "*"
+django-storages = "*"
 
 [dev-packages]
 
